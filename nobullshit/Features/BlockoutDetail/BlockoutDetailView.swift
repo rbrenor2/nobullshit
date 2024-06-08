@@ -18,11 +18,11 @@ struct BlockoutDetailView: View {
                         .listRowInsets(EdgeInsets())
                 }
             }
-            .navigationTitle("Blockout Of The Day")
         }
     }
 }
 
-#Preview {    
+#Preview {
+    
     return BlockoutDetailView(blockout: blockoutSample)
 }

@@ -17,12 +17,10 @@ struct HomeView: View {
     
     var body: some View {
         NavigationView {
-            TabView {
-                DashboardView()
-                    .tabItem {
-                        Image(systemName: "1.circle")
-                    }
-                
+            TabView {                
+                DashboardView().tabItem {
+                    Image(systemName: "1.circle")
+                }
                 UserProfileView(vm: UserProfileViewModel(appState: appState))
                     .tabItem {
                         Image(systemName: "2.circle")
@@ -56,7 +54,6 @@ struct HomeView: View {
                 }
             )
             .onAppear {
-                appState.isLoggedIn = true // Simulating the user is logged in
                 vm.fetchPreferencesDefinition()
                 vm.fetchAccountsDefinition()
             }
