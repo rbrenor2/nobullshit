@@ -23,18 +23,6 @@ struct BlockoutDetailView: View {
     }
 }
 
-#Preview {
-    let blockExercises = [
-        BlockExercise(id: "ASOIDJ", exercise: Exercise(id: "1232", description: "Great exercise for chest", difficulty: "INTERMEDIARY", instructionsUrl: "https://www.youtube.com/watch?v=eGo4IYlbE5g", name: "Pushups"), timeInSeconds: 0, repetitions: 10),
-        BlockExercise(id: "54fekj", exercise: Exercise(id: "24354", description: "Great exercise for chest", difficulty: "ADVANCED", instructionsUrl: "https://www.youtube.com/watch?v=eGo4IYlbE5g", name: "Pullups"), timeInSeconds: 0, repetitions: 5),
-        BlockExercise(id: "tg45", exercise: Exercise(id: "24354", description: "Great exercise for chest", difficulty: "ADVANCED", instructionsUrl: "https://www.youtube.com/watch?v=eGo4IYlbE5g", name: "Pullups"), timeInSeconds: 0, repetitions: 5)
-    ]
-    let blocks = [
-       Block(id: "1231", countType: "AMRAP", rounds: 5, type: "Warmup", exercises: blockExercises),
-       Block(id: "rj9454", countType: "FOR TIME", rounds: 5, type: "challenge", exercises: blockExercises),
-       Block(id: "54546d3", countType: "FOR TIME", rounds: 5, type: "challenge", exercises: blockExercises)
-    ]
-    let blockout = Blockout(blocks: blocks)
-    
-    return BlockoutDetailView(blockout: blockout)
+#Preview {    
+    return BlockoutDetailView(blockout: blockoutSample)
 }

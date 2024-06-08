@@ -7,12 +7,27 @@
 
 import FirebaseFirestoreSwift
 
+struct AttemptResult: Codable, Identifiable {
+    @DocumentID var id: String?
+    var repetitions: Int?
+    var duration: Float?
+    var weight: Float?
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case repetitions
+        case duration
+        case weight
+    }
+}
+
 struct Attempt: Codable, Identifiable {
     @DocumentID var id: String?
     var blockoutRef: String
     var cancelledAt: String
     var finishedAt: String
     var startedAt: String
+    var result: AttemptResult
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -20,5 +35,6 @@ struct Attempt: Codable, Identifiable {
         case cancelledAt
         case finishedAt
         case startedAt
+        case result
     }
 }

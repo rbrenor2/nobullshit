@@ -72,19 +72,23 @@
 		673BDD8C2C08A02E0097B038 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD8B2C08A02E0097B038 /* Block.swift */; };
 		673BDD8E2C08A0840097B038 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD8D2C08A0840097B038 /* Exercise.swift */; };
 		673BDD902C08A2A00097B038 /* Attempt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD8F2C08A2A00097B038 /* Attempt.swift */; };
-		673BDD922C08A3BD0097B038 /* BlockCountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD912C08A3BD0097B038 /* BlockCountType.swift */; };
-		673BDD942C08A4410097B038 /* BlockType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD932C08A4410097B038 /* BlockType.swift */; };
 		673BDD962C08A9A00097B038 /* BlockoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD952C08A9A00097B038 /* BlockoutService.swift */; };
 		673BDD982C08AB650097B038 /* Blockout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD972C08AB650097B038 /* Blockout.swift */; };
 		673BDD9A2C0A63C50097B038 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD992C0A63C50097B038 /* DashboardView.swift */; };
 		673BDD9D2C0A64D80097B038 /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD9C2C0A64D80097B038 /* Arrow.swift */; };
 		673BDDA02C0B04980097B038 /* BlockoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD9F2C0B04980097B038 /* BlockoutDetailView.swift */; };
+		6743475F2C146F4D00061E9D /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743475E2C146F4D00061E9D /* Blocks.swift */; };
 		679714F32C0B0CF50029B787 /* BlockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679714F22C0B0CF50029B787 /* BlockDetailView.swift */; };
-		679714F62C0B0E460029B787 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679714F52C0B0E460029B787 /* TimerView.swift */; };
 		679714FB2C0B0F990029B787 /* ExerciseCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679714FA2C0B0F990029B787 /* ExerciseCellView.swift */; };
 		679714FD2C0B0FE10029B787 /* YoutubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679714FC2C0B0FE10029B787 /* YoutubeView.swift */; };
 		679715002C0B138D0029B787 /* BlockoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679714FF2C0B138D0029B787 /* BlockoutView.swift */; };
 		679715022C0B13BF0029B787 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679715012C0B13BF0029B787 /* ExerciseView.swift */; };
+		679715092C0C62F50029B787 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679715042C0C62F50029B787 /* TimerView.swift */; };
+		6797150A2C0C62F50029B787 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679715062C0C62F50029B787 /* ClockView.swift */; };
+		6797150B2C0C62F50029B787 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679715072C0C62F50029B787 /* ProgressBarView.swift */; };
+		6797150C2C0C62F50029B787 /* ProgressTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679715082C0C62F50029B787 /* ProgressTrackView.swift */; };
+		679715102C0C64FC0029B787 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797150F2C0C64FC0029B787 /* SpeechService.swift */; };
+		679715142C0C9A530029B787 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679715132C0C9A530029B787 /* Round.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -118,19 +122,23 @@
 		673BDD8B2C08A02E0097B038 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		673BDD8D2C08A0840097B038 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		673BDD8F2C08A2A00097B038 /* Attempt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attempt.swift; sourceTree = "<group>"; };
-		673BDD912C08A3BD0097B038 /* BlockCountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockCountType.swift; sourceTree = "<group>"; };
-		673BDD932C08A4410097B038 /* BlockType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockType.swift; sourceTree = "<group>"; };
 		673BDD952C08A9A00097B038 /* BlockoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockoutService.swift; sourceTree = "<group>"; };
 		673BDD972C08AB650097B038 /* Blockout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockout.swift; sourceTree = "<group>"; };
 		673BDD992C0A63C50097B038 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		673BDD9C2C0A64D80097B038 /* Arrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
 		673BDD9F2C0B04980097B038 /* BlockoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockoutDetailView.swift; sourceTree = "<group>"; };
+		6743475E2C146F4D00061E9D /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
 		679714F22C0B0CF50029B787 /* BlockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDetailView.swift; sourceTree = "<group>"; };
-		679714F52C0B0E460029B787 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		679714FA2C0B0F990029B787 /* ExerciseCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellView.swift; sourceTree = "<group>"; };
 		679714FC2C0B0FE10029B787 /* YoutubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeView.swift; sourceTree = "<group>"; };
 		679714FF2C0B138D0029B787 /* BlockoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockoutView.swift; sourceTree = "<group>"; };
 		679715012C0B13BF0029B787 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
+		679715042C0C62F50029B787 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		679715062C0C62F50029B787 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		679715072C0C62F50029B787 /* ProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		679715082C0C62F50029B787 /* ProgressTrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressTrackView.swift; sourceTree = "<group>"; };
+		6797150F2C0C64FC0029B787 /* SpeechService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		679715132C0C9A530029B787 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +207,7 @@
 		673BDCF72C0872EC0097B038 /* nobullshit */ = {
 			isa = PBXGroup;
 			children = (
+				6743475D2C146F3500061E9D /* MockData */,
 				673BDD382C0873E40097B038 /* Enum */,
 				673BDD352C0873D90097B038 /* DataInfo */,
 				673BDD2C2C0873CE0097B038 /* Models */,
@@ -225,7 +234,7 @@
 		673BDD082C0873B20097B038 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				679714F42C0B0E380029B787 /* Timer */,
+				679715032C0C62F50029B787 /* Timer */,
 				679714F12C0B0CDF0029B787 /* BlockDetail */,
 				673BDD9E2C0B04760097B038 /* BlockoutDetail */,
 				673BDD092C0873B20097B038 /* Home */,
@@ -294,6 +303,7 @@
 		673BDD232C0873C00097B038 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				6797150F2C0C64FC0029B787 /* SpeechService.swift */,
 				673BDD242C0873C00097B038 /* UserProfileService.swift */,
 				673BDD252C0873C00097B038 /* AccountService.swift */,
 				673BDD262C0873C00097B038 /* AuthService.swift */,
@@ -310,12 +320,11 @@
 				673BDD2E2C0873CE0097B038 /* UserProfile.swift */,
 				673BDD2F2C0873CE0097B038 /* AccountDefinition.swift */,
 				673BDD302C0873CE0097B038 /* Preference.swift */,
-				673BDD8B2C08A02E0097B038 /* Block.swift */,
 				673BDD8D2C08A0840097B038 /* Exercise.swift */,
 				673BDD8F2C08A2A00097B038 /* Attempt.swift */,
-				673BDD912C08A3BD0097B038 /* BlockCountType.swift */,
-				673BDD932C08A4410097B038 /* BlockType.swift */,
 				673BDD972C08AB650097B038 /* Blockout.swift */,
+				673BDD8B2C08A02E0097B038 /* Block.swift */,
+				679715132C0C9A530029B787 /* Round.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -354,6 +363,14 @@
 			path = BlockoutDetail;
 			sourceTree = "<group>";
 		};
+		6743475D2C146F3500061E9D /* MockData */ = {
+			isa = PBXGroup;
+			children = (
+				6743475E2C146F4D00061E9D /* Blocks.swift */,
+			);
+			path = MockData;
+			sourceTree = "<group>";
+		};
 		679714F12C0B0CDF0029B787 /* BlockDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -361,14 +378,6 @@
 				679714F22C0B0CF50029B787 /* BlockDetailView.swift */,
 			);
 			path = BlockDetail;
-			sourceTree = "<group>";
-		};
-		679714F42C0B0E380029B787 /* Timer */ = {
-			isa = PBXGroup;
-			children = (
-				679714F52C0B0E460029B787 /* TimerView.swift */,
-			);
-			path = Timer;
 			sourceTree = "<group>";
 		};
 		679714F72C0B0EB20029B787 /* Components */ = {
@@ -387,6 +396,26 @@
 				679715012C0B13BF0029B787 /* ExerciseView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		679715032C0C62F50029B787 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				679715042C0C62F50029B787 /* TimerView.swift */,
+				679715052C0C62F50029B787 /* Views */,
+			);
+			name = Timer;
+			path = ../../../blockout/blockout/Views/Timer;
+			sourceTree = "<group>";
+		};
+		679715052C0C62F50029B787 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				679715062C0C62F50029B787 /* ClockView.swift */,
+				679715072C0C62F50029B787 /* ProgressBarView.swift */,
+				679715082C0C62F50029B787 /* ProgressTrackView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -502,24 +531,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				679714F62C0B0E460029B787 /* TimerView.swift in Sources */,
 				673BDD1B2C0873B20097B038 /* AuthViewModel.swift in Sources */,
 				673BDD1F2C0873B20097B038 /* UserProfileView.swift in Sources */,
 				673BDD2B2C0873C00097B038 /* PreferenceService.swift in Sources */,
 				673BDCFB2C0872EC0097B038 /* ContentView.swift in Sources */,
 				673BDD212C0873B20097B038 /* OnboardingHelper.swift in Sources */,
+				6743475F2C146F4D00061E9D /* Blocks.swift in Sources */,
 				673BDD1C2C0873B20097B038 /* AuthView.swift in Sources */,
 				673BDD282C0873C00097B038 /* UserProfileService.swift in Sources */,
 				673BDD1A2C0873B20097B038 /* HomeView.swift in Sources */,
 				673BDD322C0873CE0097B038 /* UserProfile.swift in Sources */,
-				673BDD922C08A3BD0097B038 /* BlockCountType.swift in Sources */,
 				673BDD8C2C08A02E0097B038 /* Block.swift in Sources */,
 				673BDD962C08A9A00097B038 /* BlockoutService.swift in Sources */,
+				6797150B2C0C62F50029B787 /* ProgressBarView.swift in Sources */,
 				673BDD8E2C08A0840097B038 /* Exercise.swift in Sources */,
+				679715142C0C9A530029B787 /* Round.swift in Sources */,
 				673BDD902C08A2A00097B038 /* Attempt.swift in Sources */,
 				673BDD192C0873B20097B038 /* HomeViewModel.swift in Sources */,
 				673BDD342C0873CE0097B038 /* Preference.swift in Sources */,
-				673BDD942C08A4410097B038 /* BlockType.swift in Sources */,
 				673BDD9D2C0A64D80097B038 /* Arrow.swift in Sources */,
 				673BDD312C0873CE0097B038 /* GeneralError.swift in Sources */,
 				673BDD372C0873D90097B038 /* ResourcePaths.swift in Sources */,
@@ -532,6 +561,9 @@
 				679714FD2C0B0FE10029B787 /* YoutubeView.swift in Sources */,
 				673BDD3C2C08740F0097B038 /* AppState.swift in Sources */,
 				679714F32C0B0CF50029B787 /* BlockDetailView.swift in Sources */,
+				679715102C0C64FC0029B787 /* SpeechService.swift in Sources */,
+				6797150C2C0C62F50029B787 /* ProgressTrackView.swift in Sources */,
+				6797150A2C0C62F50029B787 /* ClockView.swift in Sources */,
 				673BDD292C0873C00097B038 /* AccountService.swift in Sources */,
 				673BDD9A2C0A63C50097B038 /* DashboardView.swift in Sources */,
 				673BDD2A2C0873C00097B038 /* AuthService.swift in Sources */,
@@ -539,6 +571,7 @@
 				673BDDA02C0B04980097B038 /* BlockoutDetailView.swift in Sources */,
 				679714FB2C0B0F990029B787 /* ExerciseCellView.swift in Sources */,
 				673BDD1D2C0873B20097B038 /* PreferenceView.swift in Sources */,
+				679715092C0C62F50029B787 /* TimerView.swift in Sources */,
 				673BDD1E2C0873B20097B038 /* PreferenceViewModel.swift in Sources */,
 				673BDD332C0873CE0097B038 /* AccountDefinition.swift in Sources */,
 			);

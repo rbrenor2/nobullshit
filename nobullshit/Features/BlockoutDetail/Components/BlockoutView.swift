@@ -12,12 +12,12 @@ struct BlockoutView: View {
 
     var body: some View {
         VStack(alignment: .center, spacing: 10) {
-            Text(block.countType)
+            Text(block.countType.rawValue)
                 .font(.title)
                 .bold()
                 .padding(.vertical, 10)
-            ForEach(block.exercises) { exercise in
-                ExerciseView(exercise: exercise)
+            ForEach(block.rounds) { round in
+                ExerciseView(round: round)
             }
         }
         .padding()
@@ -25,4 +25,9 @@ struct BlockoutView: View {
         .cornerRadius(10)
         .padding(.vertical, 5)
     }
+}
+
+#Preview {
+    let block = Block(id: "ij98j98j", countType: .EMOM, rounds: [Round(id: "asd43r3", type: .PREPARE, countTo: 12)])
+    return BlockoutView(block: block)
 }

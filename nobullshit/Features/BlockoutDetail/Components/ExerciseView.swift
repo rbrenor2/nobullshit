@@ -8,14 +8,24 @@
 import SwiftUI
 
 struct ExerciseView: View {
-    var exercise: BlockExercise
+    var round: Round
 
     var body: some View {
         HStack {
-            Text(String(exercise.repetitions))
-                .bold()
-            Text(exercise.exercise.name)
+            if(round.type == RoundType.WORK) {
+                Text(String(round.repetitions ?? 10))
+                    .bold()
+                Text(round.exercise?.name ?? "")
+            } else {
+                Text(String(round.type.rawValue))
+                    .bold()
+                Text("\(round.countTo)s")
+            }
         }
         .frame(maxWidth: .infinity, alignment: .center)
     }
+}
+
+#Preview {
+    return ExerciseView(round: roundsSample[0])
 }
