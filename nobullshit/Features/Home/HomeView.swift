@@ -18,25 +18,26 @@ struct HomeView: View {
     var body: some View {
         NavigationView {
             TabView {                
-                DashboardView().tabItem {
-                    Image(systemName: "1.circle")
-                }
+                MenuView()
+                    .tabItem {
+                        Image(systemName: "timer")
+                    }
                 UserProfileView(vm: UserProfileViewModel(appState: appState))
                     .tabItem {
-                        Image(systemName: "2.circle")
+                        Image(systemName: "person")
                         Text("User Profile")
                     }
                 
                 PreferenceView(vm: PreferenceViewModel(appState: appState))
                     .tabItem {
-                        Image(systemName: "3.circle")
+                        Image(systemName: "gear")
                         Text("Preferences")
                     }
             }
-            .navigationBarTitle("No Bullshit", displayMode: .large)
+            .navigationBarTitle("Blockouts", displayMode: .large)
             .navigationBarItems(trailing:
                 Button(action: {
-                    vm.logout()
+                    print("Add workout")
                 }) {
                     Image(systemName: "power")
                         .foregroundColor(.red)

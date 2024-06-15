@@ -11,7 +11,6 @@ import Combine
 @MainActor
 class UserProfileViewModel: ObservableObject {
     var appState: AppState
-    private let userProfileService = UserProfileService()
 
     @Published var userAvatarUrl: String = ""
     @Published var name: String = "John Doe"
@@ -25,6 +24,25 @@ class UserProfileViewModel: ObservableObject {
         self.appState = appState
     }
     
+    func logout() {
+        AuthService.shared.logout()
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case .finished:
+                    self.appState.setInitialState()
+                    break
+                case .failure(let error):
+                    print("Error logging out: \(error.localizedDescription)")
+                }
+            }, receiveValue: { success in
+                if success {
+                    self.appState.isLoggedIn = false
+                }
+            })
+            .store(in: &cancellables)
+    }
+    
     func loadUserProfile() {
         if appState.userProfile == nil && appState.user?.email != nil {
             guard let email = appState.user!.email else { return }
@@ -32,10 +50,10 @@ class UserProfileViewModel: ObservableObject {
         }
     }
     
-    func fetchUserProfile(email: String) {
+    private func fetchUserProfile(email: String) {
         appState.isLoading = true
         
-        userProfileService.getUserProfile(email: email)
+        UserProfileService.shared.getUserProfile(email: email)
             .receive(on: DispatchQueue.main)
             .sink { completion in
                 self.appState.isLoading = false

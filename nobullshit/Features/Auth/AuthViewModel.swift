@@ -17,7 +17,6 @@ enum AuthType {
 @MainActor
 class AuthViewModel: ObservableObject {
     var appState: AppState
-    let authService: AuthService = AuthService()
     
     @Published var email: String = ""
     @Published var password: String = ""
@@ -35,7 +34,7 @@ class AuthViewModel: ObservableObject {
         appState.isLoading = true
     
         if(type == AuthType.EmailPassword) {
-            authService.loginWithEmailAndPassword(email: email, password: password)
+            AuthService.shared.loginWithEmailAndPassword(email: email, password: password)
                 .receive(on: DispatchQueue.main)
                 .sink { [weak self] completion in
                     switch completion {

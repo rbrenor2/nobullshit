@@ -9,6 +9,10 @@ import FirebaseAuth
 import Combine
 
 struct AuthService {
+    static let shared = AuthService()
+    
+    private init() { }
+    
     func loginWithEmailAndPassword(email: String, password: String) -> AnyPublisher<User, Error> {
         Future { promise in
             Auth.auth().signIn(withEmail: email, password: password) { authResult, error in

@@ -23,6 +23,11 @@ let blockSample1 = Block(id: "4j938j89", countType: .FORTIME, rounds: roundsSamp
 let blockSample2 = Block(id: "308h9dj0", countType: .EMOM, rounds: roundsSample)
 let blockSample3 = Block(id: "3j09sjip", countType: .TABATA, rounds: roundsSample)
 
+let blockEditSampleAMRAP = BlockEdit(type: .AMRAP)
+let blockEditSampleFORTIME = BlockEdit(type: .FORTIME)
+let blockEditSampleEMOM = BlockEdit(type: .EMOM)
+let blockEditSampleTABATA = BlockEdit(type: .TABATA)
+
 
 let blocksSample = [blockSample, blockSample1, blockSample2, blockSample3]
 let blockoutSample = Blockout(id: "sij98asj", blocks: blocksSample)

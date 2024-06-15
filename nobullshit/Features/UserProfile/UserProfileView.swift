@@ -46,6 +46,12 @@ struct UserProfileView: View {
                     .font(.subheadline)
                     .foregroundColor(.gray)
                 Spacer()
+                Button {
+                    vm.logout()
+                } label: {
+                    Text("Logout")
+                }
+
             }
         }
         .padding()

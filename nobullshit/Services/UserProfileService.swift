@@ -11,6 +11,10 @@ import FirebaseFirestoreSwift
 
 
 struct UserProfileService {
+    static let shared = UserProfileService()
+    
+    private init() { }
+    
     private let db = Firestore.firestore()
     
     func getUserProfile(email: String) -> AnyPublisher<UserProfile, Error> {

@@ -10,6 +10,10 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 struct AccountService {
+    static let shared = AccountService()
+    
+    private init() { }
+    
     private let db = Firestore.firestore()
     
     func getAccountsDefinition() -> AnyPublisher<[AccountDefinition], Error> {

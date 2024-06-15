@@ -12,9 +12,6 @@ import Combine
 @MainActor
 class HomeViewModel: ObservableObject {
     var appState: AppState
-    let authService: AuthService = AuthService()
-    let preferenceService: PreferenceService = PreferenceService()
-    let accountService: AccountService = AccountService()
 
     @Published var something: String = ""
     
@@ -24,29 +21,10 @@ class HomeViewModel: ObservableObject {
         self.appState = appState
     }
     
-    func logout() {
-        authService.logout()
-            .receive(on: DispatchQueue.main)
-            .sink(receiveCompletion: { completion in
-                switch completion {
-                case .finished:
-                    self.appState.setInitialState()
-                    break
-                case .failure(let error):
-                    print("Error logging out: \(error.localizedDescription)")
-                }
-            }, receiveValue: { success in
-                if success {
-                    self.appState.isLoggedIn = false
-                }
-            })
-            .store(in: &cancellables)
-    }
-    
     func fetchPreferencesDefinition() {
         appState.isLoading = true
         
-        preferenceService.getPreferencesDefinitions()
+        PreferenceService.shared.getPreferencesDefinitions()
             .receive(on: DispatchQueue.main)
             .sink { completion in
                 self.appState.isLoading = false
@@ -67,7 +45,7 @@ class HomeViewModel: ObservableObject {
     func fetchAccountsDefinition() {
         appState.isLoading = true
         
-        accountService.getAccountsDefinition()
+        AccountService.shared.getAccountsDefinition()
             .receive(on: DispatchQueue.main)
             .sink { completion in
                 self.appState.isLoading = false

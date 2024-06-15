@@ -9,25 +9,25 @@ import Foundation
 
 enum OnboardingInfo: String {
     case title = "Welcome to"
-    case appName = "No Bullshit"
+    case appName = "Blockouts"
     // Feature 1
     case iconFeature1 = "feature-1"
-    case titleFeature1 = "The Crosstraining Box of the World"
-    case descriptionFeature1 = ""
+    case titleFeature1 = "Your workout in Blocks"
+    case descriptionFeature1 = "Different timers to guide your HIIT workout"
     
     // Feature 2
     case iconFeature2 = "feature-2"
-    case titleFeature2 = "Enlist prepared"
-    case descriptionFeature2 = "Practice with the app and pass the rank test on the first run."
+    case titleFeature2 = "Create a Blockout"
+    case descriptionFeature2 = "Mix different timers and create your own Blockout"
     
     // Feature 3
     case iconFeature3 = "feature-3"
-    case titleFeature3 = "Have a purpose"
-    case descriptionFeature3 = "This will be the greatest mission of your life."
+    case titleFeature3 = "Share and compare results"
+    case descriptionFeature3 = "Share and challenge your friends with your own Blockouts"
     
     // Setup notice
     case iconNotice = "onboarding-notice-icon"
-    case textNotice = "Developed and designed for members of the Swiss Armed Forces."
-    case linkTitleNotice = "Learn more..."
-    case linkNotice = "https://www.lukmanascic.ch/portfolio/insignia"
+    case textNotice = "Designed with Love"
+    case linkTitleNotice = "Leave"
+    case linkNotice = "3"
 }

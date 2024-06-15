@@ -10,6 +10,10 @@ import FirebaseFirestore
 import FirebaseFirestoreSwift
 
 struct BlockoutService {
+    static let shared = BlockoutService()
+    
+    private init() { }
+    
     private let db = Firestore.firestore()
     
     func getBlockoutOfTheDay(email: String) -> AnyPublisher<Blockout, Error> {

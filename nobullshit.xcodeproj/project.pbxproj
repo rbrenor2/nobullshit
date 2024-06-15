@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		673957362C1DAF390013F97D /* CreateBlockoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739572C2C1DAF390013F97D /* CreateBlockoutViewModel.swift */; };
+		673957372C1DAF390013F97D /* AddBlockButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739572E2C1DAF390013F97D /* AddBlockButton.swift */; };
+		673957382C1DAF390013F97D /* AmrapForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6739572F2C1DAF390013F97D /* AmrapForm.swift */; };
+		673957392C1DAF390013F97D /* TabataForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673957302C1DAF390013F97D /* TabataForm.swift */; };
+		6739573A2C1DAF390013F97D /* BlockEditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673957312C1DAF390013F97D /* BlockEditCard.swift */; };
+		6739573B2C1DAF390013F97D /* ForTimeForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673957322C1DAF390013F97D /* ForTimeForm.swift */; };
+		6739573C2C1DAF390013F97D /* TextToChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673957332C1DAF390013F97D /* TextToChipView.swift */; };
+		6739573D2C1DAF390013F97D /* EmomForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673957342C1DAF390013F97D /* EmomForm.swift */; };
+		6739573E2C1DAF390013F97D /* CreateBlockoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673957352C1DAF390013F97D /* CreateBlockoutView.swift */; };
+		673957412C1DB0D70013F97D /* SwiftUISnackbar in Frameworks */ = {isa = PBXBuildFile; productRef = 673957402C1DB0D70013F97D /* SwiftUISnackbar */; };
 		673BDCF92C0872EC0097B038 /* nobullshitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDCF82C0872EC0097B038 /* nobullshitApp.swift */; };
 		673BDCFB2C0872EC0097B038 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDCFA2C0872EC0097B038 /* ContentView.swift */; };
 		673BDCFD2C0872F00097B038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 673BDCFC2C0872F00097B038 /* Assets.xcassets */; };
@@ -83,15 +93,26 @@
 		679714FD2C0B0FE10029B787 /* YoutubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679714FC2C0B0FE10029B787 /* YoutubeView.swift */; };
 		679715002C0B138D0029B787 /* BlockoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679714FF2C0B138D0029B787 /* BlockoutView.swift */; };
 		679715022C0B13BF0029B787 /* ExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679715012C0B13BF0029B787 /* ExerciseView.swift */; };
-		679715092C0C62F50029B787 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679715042C0C62F50029B787 /* TimerView.swift */; };
-		6797150A2C0C62F50029B787 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679715062C0C62F50029B787 /* ClockView.swift */; };
-		6797150B2C0C62F50029B787 /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679715072C0C62F50029B787 /* ProgressBarView.swift */; };
-		6797150C2C0C62F50029B787 /* ProgressTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679715082C0C62F50029B787 /* ProgressTrackView.swift */; };
 		679715102C0C64FC0029B787 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6797150F2C0C64FC0029B787 /* SpeechService.swift */; };
 		679715142C0C9A530029B787 /* Round.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679715132C0C9A530029B787 /* Round.swift */; };
+		67D09B602C1DE22F001AEE0B /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D09B5B2C1DE22F001AEE0B /* TimerView.swift */; };
+		67D09B612C1DE22F001AEE0B /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D09B5D2C1DE22F001AEE0B /* ClockView.swift */; };
+		67D09B622C1DE22F001AEE0B /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D09B5E2C1DE22F001AEE0B /* ProgressBarView.swift */; };
+		67D09B632C1DE22F001AEE0B /* ProgressTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D09B5F2C1DE22F001AEE0B /* ProgressTrackView.swift */; };
+		67D09B652C1DE40F001AEE0B /* BlockEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D09B642C1DE40F001AEE0B /* BlockEdit.swift */; };
+		67D09B692C1E4A9E001AEE0B /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D09B682C1E4A9E001AEE0B /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6739572C2C1DAF390013F97D /* CreateBlockoutViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateBlockoutViewModel.swift; sourceTree = "<group>"; };
+		6739572E2C1DAF390013F97D /* AddBlockButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddBlockButton.swift; sourceTree = "<group>"; };
+		6739572F2C1DAF390013F97D /* AmrapForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmrapForm.swift; sourceTree = "<group>"; };
+		673957302C1DAF390013F97D /* TabataForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabataForm.swift; sourceTree = "<group>"; };
+		673957312C1DAF390013F97D /* BlockEditCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockEditCard.swift; sourceTree = "<group>"; };
+		673957322C1DAF390013F97D /* ForTimeForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForTimeForm.swift; sourceTree = "<group>"; };
+		673957332C1DAF390013F97D /* TextToChipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextToChipView.swift; sourceTree = "<group>"; };
+		673957342C1DAF390013F97D /* EmomForm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmomForm.swift; sourceTree = "<group>"; };
+		673957352C1DAF390013F97D /* CreateBlockoutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateBlockoutView.swift; sourceTree = "<group>"; };
 		673BDCF52C0872EC0097B038 /* nobullshit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = nobullshit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		673BDCF82C0872EC0097B038 /* nobullshitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nobullshitApp.swift; sourceTree = "<group>"; };
 		673BDCFA2C0872EC0097B038 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,12 +154,14 @@
 		679714FC2C0B0FE10029B787 /* YoutubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeView.swift; sourceTree = "<group>"; };
 		679714FF2C0B138D0029B787 /* BlockoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockoutView.swift; sourceTree = "<group>"; };
 		679715012C0B13BF0029B787 /* ExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseView.swift; sourceTree = "<group>"; };
-		679715042C0C62F50029B787 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
-		679715062C0C62F50029B787 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
-		679715072C0C62F50029B787 /* ProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
-		679715082C0C62F50029B787 /* ProgressTrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressTrackView.swift; sourceTree = "<group>"; };
 		6797150F2C0C64FC0029B787 /* SpeechService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
 		679715132C0C9A530029B787 /* Round.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Round.swift; sourceTree = "<group>"; };
+		67D09B5B2C1DE22F001AEE0B /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		67D09B5D2C1DE22F001AEE0B /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		67D09B5E2C1DE22F001AEE0B /* ProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
+		67D09B5F2C1DE22F001AEE0B /* ProgressTrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressTrackView.swift; sourceTree = "<group>"; };
+		67D09B642C1DE40F001AEE0B /* BlockEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockEdit.swift; sourceTree = "<group>"; };
+		67D09B682C1E4A9E001AEE0B /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +194,7 @@
 				673BDD6C2C0876570097B038 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				673BDD5C2C0875790097B038 /* FirebaseCrashlytics in Frameworks */,
 				673BDD602C0875790097B038 /* FirebaseDatabaseSwift in Frameworks */,
+				673957412C1DB0D70013F97D /* SwiftUISnackbar in Frameworks */,
 				673BDD542C0875790097B038 /* FirebaseAppCheck in Frameworks */,
 				673BDD6A2C0876570097B038 /* FirebaseAnalyticsSwift in Frameworks */,
 				673BDD662C0876570097B038 /* FirebaseAnalytics in Frameworks */,
@@ -188,6 +212,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6739572B2C1DAF390013F97D /* CreateMix */ = {
+			isa = PBXGroup;
+			children = (
+				6739572D2C1DAF390013F97D /* Views */,
+				673957352C1DAF390013F97D /* CreateBlockoutView.swift */,
+				6739572C2C1DAF390013F97D /* CreateBlockoutViewModel.swift */,
+			);
+			path = CreateMix;
+			sourceTree = "<group>";
+		};
+		6739572D2C1DAF390013F97D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6739572E2C1DAF390013F97D /* AddBlockButton.swift */,
+				6739572F2C1DAF390013F97D /* AmrapForm.swift */,
+				673957302C1DAF390013F97D /* TabataForm.swift */,
+				673957312C1DAF390013F97D /* BlockEditCard.swift */,
+				673957322C1DAF390013F97D /* ForTimeForm.swift */,
+				673957332C1DAF390013F97D /* TextToChipView.swift */,
+				673957342C1DAF390013F97D /* EmomForm.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		673BDCEC2C0872EC0097B038 = {
 			isa = PBXGroup;
 			children = (
@@ -234,7 +282,8 @@
 		673BDD082C0873B20097B038 /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				679715032C0C62F50029B787 /* Timer */,
+				67D09B5A2C1DE22F001AEE0B /* Timer */,
+				6739572B2C1DAF390013F97D /* CreateMix */,
 				679714F12C0B0CDF0029B787 /* BlockDetail */,
 				673BDD9E2C0B04760097B038 /* BlockoutDetail */,
 				673BDD092C0873B20097B038 /* Home */,
@@ -325,6 +374,7 @@
 				673BDD972C08AB650097B038 /* Blockout.swift */,
 				673BDD8B2C08A02E0097B038 /* Block.swift */,
 				679715132C0C9A530029B787 /* Round.swift */,
+				67D09B642C1DE40F001AEE0B /* BlockEdit.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -350,6 +400,7 @@
 			children = (
 				673BDD992C0A63C50097B038 /* DashboardView.swift */,
 				673BDD9C2C0A64D80097B038 /* Arrow.swift */,
+				67D09B682C1E4A9E001AEE0B /* MenuView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -398,22 +449,21 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		679715032C0C62F50029B787 /* Timer */ = {
+		67D09B5A2C1DE22F001AEE0B /* Timer */ = {
 			isa = PBXGroup;
 			children = (
-				679715042C0C62F50029B787 /* TimerView.swift */,
-				679715052C0C62F50029B787 /* Views */,
+				67D09B5B2C1DE22F001AEE0B /* TimerView.swift */,
+				67D09B5C2C1DE22F001AEE0B /* Views */,
 			);
-			name = Timer;
-			path = ../../../blockout/blockout/Views/Timer;
+			path = Timer;
 			sourceTree = "<group>";
 		};
-		679715052C0C62F50029B787 /* Views */ = {
+		67D09B5C2C1DE22F001AEE0B /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				679715062C0C62F50029B787 /* ClockView.swift */,
-				679715072C0C62F50029B787 /* ProgressBarView.swift */,
-				679715082C0C62F50029B787 /* ProgressTrackView.swift */,
+				67D09B5D2C1DE22F001AEE0B /* ClockView.swift */,
+				67D09B5E2C1DE22F001AEE0B /* ProgressBarView.swift */,
+				67D09B5F2C1DE22F001AEE0B /* ProgressTrackView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -471,6 +521,7 @@
 				673BDD832C0876580097B038 /* FirebaseFunctions */,
 				673BDD852C0876580097B038 /* FirebaseFunctionsCombine-Community */,
 				673BDD872C0876580097B038 /* FirebaseInAppMessaging-Beta */,
+				673957402C1DB0D70013F97D /* SwiftUISnackbar */,
 			);
 			productName = nobullshit;
 			productReference = 673BDCF52C0872EC0097B038 /* nobullshit.app */;
@@ -503,6 +554,7 @@
 			packageReferences = (
 				673BDD3D2C0874CF0097B038 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				673BDD482C0875100097B038 /* XCRemoteSwiftPackageReference "UIOnboarding" */,
+				6739573F2C1DB0D70013F97D /* XCRemoteSwiftPackageReference "SwiftUISnackbar" */,
 			);
 			productRefGroup = 673BDCF62C0872EC0097B038 /* Products */;
 			projectDirPath = "";
@@ -532,48 +584,59 @@
 			buildActionMask = 2147483647;
 			files = (
 				673BDD1B2C0873B20097B038 /* AuthViewModel.swift in Sources */,
+				67D09B612C1DE22F001AEE0B /* ClockView.swift in Sources */,
 				673BDD1F2C0873B20097B038 /* UserProfileView.swift in Sources */,
 				673BDD2B2C0873C00097B038 /* PreferenceService.swift in Sources */,
+				673957372C1DAF390013F97D /* AddBlockButton.swift in Sources */,
 				673BDCFB2C0872EC0097B038 /* ContentView.swift in Sources */,
 				673BDD212C0873B20097B038 /* OnboardingHelper.swift in Sources */,
+				673957362C1DAF390013F97D /* CreateBlockoutViewModel.swift in Sources */,
 				6743475F2C146F4D00061E9D /* Blocks.swift in Sources */,
 				673BDD1C2C0873B20097B038 /* AuthView.swift in Sources */,
 				673BDD282C0873C00097B038 /* UserProfileService.swift in Sources */,
 				673BDD1A2C0873B20097B038 /* HomeView.swift in Sources */,
 				673BDD322C0873CE0097B038 /* UserProfile.swift in Sources */,
 				673BDD8C2C08A02E0097B038 /* Block.swift in Sources */,
+				673957392C1DAF390013F97D /* TabataForm.swift in Sources */,
 				673BDD962C08A9A00097B038 /* BlockoutService.swift in Sources */,
-				6797150B2C0C62F50029B787 /* ProgressBarView.swift in Sources */,
+				67D09B622C1DE22F001AEE0B /* ProgressBarView.swift in Sources */,
 				673BDD8E2C08A0840097B038 /* Exercise.swift in Sources */,
 				679715142C0C9A530029B787 /* Round.swift in Sources */,
 				673BDD902C08A2A00097B038 /* Attempt.swift in Sources */,
 				673BDD192C0873B20097B038 /* HomeViewModel.swift in Sources */,
 				673BDD342C0873CE0097B038 /* Preference.swift in Sources */,
 				673BDD9D2C0A64D80097B038 /* Arrow.swift in Sources */,
+				673957382C1DAF390013F97D /* AmrapForm.swift in Sources */,
+				6739573E2C1DAF390013F97D /* CreateBlockoutView.swift in Sources */,
 				673BDD312C0873CE0097B038 /* GeneralError.swift in Sources */,
 				673BDD372C0873D90097B038 /* ResourcePaths.swift in Sources */,
 				673BDCF92C0872EC0097B038 /* nobullshitApp.swift in Sources */,
 				673BDD202C0873B20097B038 /* UserProfileViewModel.swift in Sources */,
 				679715002C0B138D0029B787 /* BlockoutView.swift in Sources */,
 				679715022C0B13BF0029B787 /* ExerciseView.swift in Sources */,
+				6739573D2C1DAF390013F97D /* EmomForm.swift in Sources */,
 				673BDD222C0873B20097B038 /* OnboardingView.swift in Sources */,
 				673BDD3A2C0873E40097B038 /* OnboardingInfo.swift in Sources */,
 				679714FD2C0B0FE10029B787 /* YoutubeView.swift in Sources */,
+				6739573C2C1DAF390013F97D /* TextToChipView.swift in Sources */,
 				673BDD3C2C08740F0097B038 /* AppState.swift in Sources */,
 				679714F32C0B0CF50029B787 /* BlockDetailView.swift in Sources */,
+				67D09B652C1DE40F001AEE0B /* BlockEdit.swift in Sources */,
 				679715102C0C64FC0029B787 /* SpeechService.swift in Sources */,
-				6797150C2C0C62F50029B787 /* ProgressTrackView.swift in Sources */,
-				6797150A2C0C62F50029B787 /* ClockView.swift in Sources */,
+				67D09B632C1DE22F001AEE0B /* ProgressTrackView.swift in Sources */,
 				673BDD292C0873C00097B038 /* AccountService.swift in Sources */,
 				673BDD9A2C0A63C50097B038 /* DashboardView.swift in Sources */,
 				673BDD2A2C0873C00097B038 /* AuthService.swift in Sources */,
 				673BDD982C08AB650097B038 /* Blockout.swift in Sources */,
+				6739573B2C1DAF390013F97D /* ForTimeForm.swift in Sources */,
+				6739573A2C1DAF390013F97D /* BlockEditCard.swift in Sources */,
 				673BDDA02C0B04980097B038 /* BlockoutDetailView.swift in Sources */,
 				679714FB2C0B0F990029B787 /* ExerciseCellView.swift in Sources */,
+				67D09B692C1E4A9E001AEE0B /* MenuView.swift in Sources */,
 				673BDD1D2C0873B20097B038 /* PreferenceView.swift in Sources */,
-				679715092C0C62F50029B787 /* TimerView.swift in Sources */,
 				673BDD1E2C0873B20097B038 /* PreferenceViewModel.swift in Sources */,
 				673BDD332C0873CE0097B038 /* AccountDefinition.swift in Sources */,
+				67D09B602C1DE22F001AEE0B /* TimerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -781,6 +844,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		6739573F2C1DB0D70013F97D /* XCRemoteSwiftPackageReference "SwiftUISnackbar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/zaniluca/SwiftUISnackbar";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		673BDD3D2C0874CF0097B038 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -800,6 +871,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		673957402C1DB0D70013F97D /* SwiftUISnackbar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6739573F2C1DB0D70013F97D /* XCRemoteSwiftPackageReference "SwiftUISnackbar" */;
+			productName = SwiftUISnackbar;
+		};
 		673BDD3E2C0874CF0097B038 /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 673BDD3D2C0874CF0097B038 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
