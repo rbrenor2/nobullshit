@@ -45,13 +45,16 @@ struct UserProfileView: View {
                 Text(vm.accountDescription ?? "aqui")
                     .font(.subheadline)
                     .foregroundColor(.gray)
-                Spacer()
+                Text(appState.userProfile?.getTrialEndDateAsString() ?? "aqui")
+                    .font(.subheadline)
+                    .foregroundColor(.gray)
+                
                 Button {
                     vm.logout()
                 } label: {
                     Text("Logout")
                 }
-
+                Spacer()
             }
         }
         .padding()
