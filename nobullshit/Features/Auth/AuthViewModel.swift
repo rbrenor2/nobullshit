@@ -23,10 +23,23 @@ class AuthViewModel: ObservableObject {
     @Published var isLoginButtonDisabled: Bool = true
     
     private var cancellables = Set<AnyCancellable>()
+    private var authStateHandler: AuthStateDidChangeListenerHandle?
     
     init(appState: AppState) {
         self.appState = appState
+        registerAuthStateHandler()
         setupBindings()
+    }
+    
+    func registerAuthStateHandler() {
+        if(authStateHandler == nil) {
+            authStateHandler = Auth.auth().addStateDidChangeListener({ auth, user in
+                if user != nil {
+                    self.appState.user = user
+                    self.appState.isLoggedIn = true
+                }
+            })
+        }
     }
 
     func login(type: AuthType) {

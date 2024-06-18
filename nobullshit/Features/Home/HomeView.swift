@@ -16,33 +16,26 @@ struct HomeView: View {
     @State private var showingAuthView = false
     
     var body: some View {
-        NavigationView {
-            TabView {                
-                MenuView()
+        NavigationStack {
+            TabView {
+                TimerMenu(vm: TimerMenuViewModel(appState: appState))
+                    .navigationTitle("Timers")
                     .tabItem {
                         Image(systemName: "timer")
+                        Text("Timers")
                     }
                 UserProfileView(vm: UserProfileViewModel(appState: appState))
                     .tabItem {
                         Image(systemName: "person")
                         Text("User Profile")
                     }
-                
                 PreferenceView(vm: PreferenceViewModel(appState: appState))
                     .tabItem {
                         Image(systemName: "gear")
                         Text("Preferences")
                     }
             }
-            .navigationBarTitle("Blockouts", displayMode: .large)
-            .navigationBarItems(trailing:
-                Button(action: {
-                    print("Add workout")
-                }) {
-                    Image(systemName: "power")
-                        .foregroundColor(.red)
-                }
-            )
+        
             .background(
                 NavigationLink(
                     destination: AuthView(vm: AuthViewModel(appState: appState)).navigationBarBackButtonHidden(true),
@@ -63,7 +56,6 @@ struct HomeView: View {
                     .edgesIgnoringSafeArea(.all)
             })
         }
-        
     }
 }
 

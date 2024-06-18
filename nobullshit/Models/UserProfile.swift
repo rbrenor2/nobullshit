@@ -6,6 +6,8 @@
 //
 
 import FirebaseFirestoreSwift
+import FirebaseFirestore
+import Foundation
 
 struct UserProfile: Codable, Identifiable {
     @DocumentID var id: String?
@@ -13,14 +15,10 @@ struct UserProfile: Codable, Identifiable {
     var accountType: String
     var showOnboarding: Bool
     var isTrial: Bool
-    var trialEndDate: String
-    
-    // No Bullshit
+    var trialEndDate: Date?
     var level: Int
-    var lastAttempt: String
     var points: Int
-    
-    
+
     enum CodingKeys: String, CodingKey {
         case id
         case name
@@ -29,7 +27,6 @@ struct UserProfile: Codable, Identifiable {
         case isTrial
         case trialEndDate
         case level
-        case lastAttempt
         case points
     }
 }
