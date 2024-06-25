@@ -38,7 +38,7 @@ struct CreateBlockoutView: View {
                             }    
                         }
                         ScrollView(.horizontal, showsIndicators: false, content: {
-                            HStack(alignment: .center, spacing: 5, content: {
+                            HStack(alignment: .center, spacing: 3, content: {
                                 AddBlockButton(type: .AMRAP) {
                                     vm.addBlock(.AMRAP)
                                 }
@@ -59,19 +59,16 @@ struct CreateBlockoutView: View {
                     .padding(.all)
             }
         }).toolbar(content: {
-            Button("Save") { 
-                vm.createWorkout {
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-                        presentationMode.wrappedValue.dismiss()
-                    }
+            Button("Save") {
+                vm.createBlockout()
+                DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                    presentationMode.wrappedValue.dismiss()
                 }
             }
         }).snackbar(isShowing: $vm.showSnackbar, title: vm.snackbarTitle, text: vm.snackbarText, style: .custom(.blue))
     }
 }
 
-struct CreateBlockoutView_Previews: PreviewProvider {
-    static var previews: some View {
-        CreateBlockoutView(vm: CreateBlockoutViewModel())
-    }
+#Preview {
+    CreateBlockoutView(vm: CreateBlockoutViewModel())
 }

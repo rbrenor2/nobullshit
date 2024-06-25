@@ -23,7 +23,7 @@ struct TimerMenu: View {
                     }
                 }.padding(.bottom, 70)
                 NavigationLink {
-                    AmrapSetupView(work: $vm.work)
+                    AmrapSetupView(work: $vm.work, rounds: $vm.rounds, rest: $vm.rest)
                     StartButtonView(rounds: roundsSample)
                 } label: {
                     TimerOptionView(title: "AMRAP", color: .blue)
@@ -35,13 +35,13 @@ struct TimerMenu: View {
                     TimerOptionView(title: "FOR TIME", color: .brown)
                 }
                 NavigationLink {
-                    EmomSetupView(work: $vm.work, rest: $vm.rest, rounds: $vm.rounds)
+                    EmomSetupView(work: $vm.work, rounds: $vm.rounds, rest: $vm.rest)
                     StartButtonView(rounds: roundsSample)
                 } label: {
                     TimerOptionView(title: "EMOM", color: .green)
                 }
                 NavigationLink {
-                    TabataSetupView(work: $vm.work, rest: $vm.rest, rounds: $vm.rounds)
+                    TabataSetupView(work: $vm.work, rounds: $vm.rounds, rest: $vm.rest)
                     StartButtonView(rounds: roundsSample)
                 } label: {
                     TimerOptionView(title: "TABATA", color: .red)

@@ -10,10 +10,17 @@ import SwiftUI
 struct FortimeSetupView: View {
     @Binding var work: Int
     
+    let isForEditCard: Bool?
+    
+    init(work: Binding<Int>, isForEditCard: Bool? = nil) {
+        self._work = work
+        self.isForEditCard = isForEditCard != nil ? isForEditCard : false
+    }
+    
     var body: some View {
         HStack(alignment: .center, spacing: 10, content: {
             Text("FOR")
-                .font(.title)
+                .font(isForEditCard! ? .title3 : .title)
                 .bold()
             VStack(alignment: .center, spacing: 20, content: {
                 Menu {
@@ -21,21 +28,21 @@ struct FortimeSetupView: View {
                         ForEach(1...30, id: \.self) { value in
                             Text(String(value))
                                 .tag(value)
-                                .font(.largeTitle)
+                                .font( isForEditCard! ? .title : .largeTitle)
                         }
                     } label: {}
+                        .pickerStyle(.palette)
                 } label: {
                     Text(String($work.wrappedValue))
-                        .font(.largeTitle)
+                        .font( isForEditCard! ? .title : .largeTitle)
                         .foregroundStyle(.red)
                         .bold()
                 }
             })
             Text("MINUTES")
-                .font(.title)
+                .font(isForEditCard! ? .title3 : .title)
                 .bold()
         })
-        .navigationTitle("FOR TIME")
     }
 }
 
