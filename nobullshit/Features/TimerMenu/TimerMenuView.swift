@@ -22,29 +22,17 @@ struct TimerMenu: View {
                         TimerOptionView(title: "BLOCKOUT", color: .red, iconName: "crown.fill")
                     }
                 }.padding(.bottom, 70)
-                NavigationLink {
+                TimerMenuOptionView(countType: .AMRAP, rounds: vm.getRounds()) {
                     AmrapSetupView(work: $vm.work, rounds: $vm.rounds, rest: $vm.rest)
-                    StartButtonView(rounds: roundsSample)
-                } label: {
-                    TimerOptionView(title: "AMRAP", color: .blue)
                 }
-                NavigationLink {
+                TimerMenuOptionView(countType: .FORTIME, rounds: vm.getRounds()) {
                     FortimeSetupView(work: $vm.work)
-                    StartButtonView(rounds: roundsSample)
-                } label: {
-                    TimerOptionView(title: "FOR TIME", color: .brown)
                 }
-                NavigationLink {
+                TimerMenuOptionView(countType: .EMOM, rounds: vm.getRounds()) {
                     EmomSetupView(work: $vm.work, rounds: $vm.rounds, rest: $vm.rest)
-                    StartButtonView(rounds: roundsSample)
-                } label: {
-                    TimerOptionView(title: "EMOM", color: .green)
                 }
-                NavigationLink {
+                TimerMenuOptionView(countType: .TABATA, rounds: vm.getRounds()) {
                     TabataSetupView(work: $vm.work, rounds: $vm.rounds, rest: $vm.rest)
-                    StartButtonView(rounds: roundsSample)
-                } label: {
-                    TimerOptionView(title: "TABATA", color: .red)
                 }
             }
         }
@@ -54,9 +42,10 @@ struct TimerMenu: View {
 
 struct StartButtonView: View {
     let rounds: [Round]
+    let countType: CountType
     
     var body: some View {
-        NavigationLink(destination: TimerView(rounds: rounds)) {
+        NavigationLink(destination: TimerView(rounds: rounds, countType: countType)) {
             Text("Start")
                 .font(.title2)
                 .bold()

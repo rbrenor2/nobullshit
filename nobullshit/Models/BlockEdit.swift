@@ -32,4 +32,6 @@ struct BlockEdit: Identifiable, Equatable {
     static func == (lhs: BlockEdit, rhs: BlockEdit) -> Bool {
         lhs.id == rhs.id
     }
+    
+    
 }

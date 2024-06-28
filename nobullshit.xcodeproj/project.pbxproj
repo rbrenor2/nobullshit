@@ -82,6 +82,7 @@
 		673BDD982C08AB650097B038 /* Blockout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD972C08AB650097B038 /* Blockout.swift */; };
 		673BDDA02C0B04980097B038 /* BlockoutDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD9F2C0B04980097B038 /* BlockoutDetailView.swift */; };
 		6743475F2C146F4D00061E9D /* Blocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6743475E2C146F4D00061E9D /* Blocks.swift */; };
+		67886AF62C2B4F6C00E27AF9 /* TimerMenuOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67886AF52C2B4F6C00E27AF9 /* TimerMenuOptionView.swift */; };
 		679714F32C0B0CF50029B787 /* BlockDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679714F22C0B0CF50029B787 /* BlockDetailView.swift */; };
 		679714FB2C0B0F990029B787 /* ExerciseCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679714FA2C0B0F990029B787 /* ExerciseCellView.swift */; };
 		679714FD2C0B0FE10029B787 /* YoutubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 679714FC2C0B0FE10029B787 /* YoutubeView.swift */; };
@@ -144,6 +145,7 @@
 		673BDD972C08AB650097B038 /* Blockout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blockout.swift; sourceTree = "<group>"; };
 		673BDD9F2C0B04980097B038 /* BlockoutDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockoutDetailView.swift; sourceTree = "<group>"; };
 		6743475E2C146F4D00061E9D /* Blocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blocks.swift; sourceTree = "<group>"; };
+		67886AF52C2B4F6C00E27AF9 /* TimerMenuOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMenuOptionView.swift; sourceTree = "<group>"; };
 		679714F22C0B0CF50029B787 /* BlockDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockDetailView.swift; sourceTree = "<group>"; };
 		679714FA2C0B0F990029B787 /* ExerciseCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCellView.swift; sourceTree = "<group>"; };
 		679714FC2C0B0FE10029B787 /* YoutubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YoutubeView.swift; sourceTree = "<group>"; };
@@ -475,6 +477,7 @@
 			children = (
 				67D09B682C1E4A9E001AEE0B /* TimerMenuView.swift */,
 				67D09B782C1F58B7001AEE0B /* TimerMenuViewModel.swift */,
+				67886AF52C2B4F6C00E27AF9 /* TimerMenuOptionView.swift */,
 			);
 			path = TimerMenu;
 			sourceTree = "<group>";
@@ -640,6 +643,7 @@
 				673BDD2A2C0873C00097B038 /* AuthService.swift in Sources */,
 				67D09B842C1F5F1E001AEE0B /* EmomSetupView.swift in Sources */,
 				67D09B742C1F50F8001AEE0B /* AmrapSetupView.swift in Sources */,
+				67886AF62C2B4F6C00E27AF9 /* TimerMenuOptionView.swift in Sources */,
 				673BDD982C08AB650097B038 /* Blockout.swift in Sources */,
 				6739573A2C1DAF390013F97D /* BlockEditCard.swift in Sources */,
 				673BDDA02C0B04980097B038 /* BlockoutDetailView.swift in Sources */,

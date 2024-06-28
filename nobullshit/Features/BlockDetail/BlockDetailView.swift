@@ -16,7 +16,7 @@ struct BlockDetailView: View {
                 ExerciseCellView(round: round)
                     .listRowInsets(EdgeInsets())
             }
-            NavigationLink(destination: TimerView(rounds: block.rounds)) {
+            NavigationLink(destination: TimerView(rounds: block.rounds, countType: block.countType)) {
                 Text("Start")
                     .font(.title2)
                     .bold()
