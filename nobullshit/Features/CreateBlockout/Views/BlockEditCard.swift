@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct BlockEditCard: View {
-    @Binding var block: BlockEdit
+    @Binding var block: Block
     
     let onClose: () -> Void
     
@@ -40,7 +40,6 @@ struct BlockEditCard: View {
             })
         })
         .padding(.all)
-        .border(.gray)
         .overlay(
             RoundedRectangle(cornerRadius: 16)
                 .stroke(.red, lineWidth: 4)

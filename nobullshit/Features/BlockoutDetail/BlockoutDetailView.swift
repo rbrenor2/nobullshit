@@ -24,5 +24,5 @@ struct BlockoutDetailView: View {
 
 #Preview {
     
-    return BlockoutDetailView(blockout: blockoutSample)
+//    return BlockoutDetailView(blockout: blockoutSample)
 }

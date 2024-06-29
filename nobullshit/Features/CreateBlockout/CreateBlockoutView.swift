@@ -32,7 +32,7 @@ struct CreateBlockoutView: View {
                             ForEach($vm.blocks, id: \.id) { block in
                                 ZStack(alignment: .center, content: {
                                     BlockEditCard(block: block, onClose: {
-                                        vm.removeBlock(id: block.id!);
+                                        vm.removeBlock(id: UUID(uuidString: block.id!)!);
                                     })
                                 })
                             }    

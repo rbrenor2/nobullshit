@@ -12,27 +12,26 @@ struct BlockDetailView: View {
     
     var body: some View {
         VStack {
-            List(block.rounds) { round in
-                ExerciseCellView(round: round)
-                    .listRowInsets(EdgeInsets())
-            }
-            NavigationLink(destination: TimerView(rounds: block.rounds, countType: block.countType)) {
-                Text("Start")
-                    .font(.title2)
-                    .bold()
-                    .frame(maxWidth: .infinity)
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-                    .shadow(radius: 5)
-                    .padding([.leading, .trailing, .top])
-            }
-        }.navigationTitle(block.countType.rawValue)
+//            List(block.rounds) { round in
+//                ExerciseCellView(round: round)
+//                    .listRowInsets(EdgeInsets())
+//            }
+//            NavigationLink(destination: TimerView(rounds: block.rounds, countType: block.countType)) {
+//                Text("Start")
+//                    .font(.title2)
+//                    .bold()
+//                    .frame(maxWidth: .infinity)
+//                    .padding()
+//                    .background(Color.blue)
+//                    .foregroundColor(.white)
+//                    .cornerRadius(10)
+//                    .shadow(radius: 5)
+//                    .padding([.leading, .trailing, .top])
+//            }
+        }.navigationTitle(block.type.rawValue)
     }
 }
 
 #Preview {
-    print(blockSample)
-    return BlockDetailView(block: blockSample)
+    return BlockDetailView(block: Block(type: .AMRAP))
 }

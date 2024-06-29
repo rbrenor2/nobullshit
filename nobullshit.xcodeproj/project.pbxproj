@@ -75,7 +75,7 @@
 		673BDD862C0876580097B038 /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 673BDD852C0876580097B038 /* FirebaseFunctionsCombine-Community */; };
 		673BDD882C0876580097B038 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 673BDD872C0876580097B038 /* FirebaseInAppMessaging-Beta */; };
 		673BDD8A2C0877630097B038 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 673BDD892C0877630097B038 /* GoogleService-Info.plist */; };
-		673BDD8C2C08A02E0097B038 /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD8B2C08A02E0097B038 /* Block.swift */; };
+		673BDD8C2C08A02E0097B038 /* BlockOld.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD8B2C08A02E0097B038 /* BlockOld.swift */; };
 		673BDD8E2C08A0840097B038 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD8D2C08A0840097B038 /* Exercise.swift */; };
 		673BDD902C08A2A00097B038 /* Attempt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD8F2C08A2A00097B038 /* Attempt.swift */; };
 		673BDD962C08A9A00097B038 /* BlockoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673BDD952C08A9A00097B038 /* BlockoutService.swift */; };
@@ -94,7 +94,7 @@
 		67D09B612C1DE22F001AEE0B /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D09B5D2C1DE22F001AEE0B /* ClockView.swift */; };
 		67D09B622C1DE22F001AEE0B /* ProgressBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D09B5E2C1DE22F001AEE0B /* ProgressBarView.swift */; };
 		67D09B632C1DE22F001AEE0B /* ProgressTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D09B5F2C1DE22F001AEE0B /* ProgressTrackView.swift */; };
-		67D09B652C1DE40F001AEE0B /* BlockEdit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D09B642C1DE40F001AEE0B /* BlockEdit.swift */; };
+		67D09B652C1DE40F001AEE0B /* Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D09B642C1DE40F001AEE0B /* Block.swift */; };
 		67D09B692C1E4A9E001AEE0B /* TimerMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D09B682C1E4A9E001AEE0B /* TimerMenuView.swift */; };
 		67D09B6B2C1E545F001AEE0B /* AppCheckProviderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D09B6A2C1E545F001AEE0B /* AppCheckProviderFactory.swift */; };
 		67D09B742C1F50F8001AEE0B /* AmrapSetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D09B732C1F50F8001AEE0B /* AmrapSetupView.swift */; };
@@ -138,7 +138,7 @@
 		673BDD392C0873E40097B038 /* OnboardingInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OnboardingInfo.swift; sourceTree = "<group>"; };
 		673BDD3B2C08740F0097B038 /* AppState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		673BDD892C0877630097B038 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		673BDD8B2C08A02E0097B038 /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
+		673BDD8B2C08A02E0097B038 /* BlockOld.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockOld.swift; sourceTree = "<group>"; };
 		673BDD8D2C08A0840097B038 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		673BDD8F2C08A2A00097B038 /* Attempt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Attempt.swift; sourceTree = "<group>"; };
 		673BDD952C08A9A00097B038 /* BlockoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockoutService.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 		67D09B5D2C1DE22F001AEE0B /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		67D09B5E2C1DE22F001AEE0B /* ProgressBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressBarView.swift; sourceTree = "<group>"; };
 		67D09B5F2C1DE22F001AEE0B /* ProgressTrackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressTrackView.swift; sourceTree = "<group>"; };
-		67D09B642C1DE40F001AEE0B /* BlockEdit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockEdit.swift; sourceTree = "<group>"; };
+		67D09B642C1DE40F001AEE0B /* Block.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Block.swift; sourceTree = "<group>"; };
 		67D09B682C1E4A9E001AEE0B /* TimerMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerMenuView.swift; sourceTree = "<group>"; };
 		67D09B6A2C1E545F001AEE0B /* AppCheckProviderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCheckProviderFactory.swift; sourceTree = "<group>"; };
 		67D09B732C1F50F8001AEE0B /* AmrapSetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmrapSetupView.swift; sourceTree = "<group>"; };
@@ -373,9 +373,9 @@
 				673BDD8D2C08A0840097B038 /* Exercise.swift */,
 				673BDD8F2C08A2A00097B038 /* Attempt.swift */,
 				673BDD972C08AB650097B038 /* Blockout.swift */,
-				673BDD8B2C08A02E0097B038 /* Block.swift */,
+				673BDD8B2C08A02E0097B038 /* BlockOld.swift */,
 				679715132C0C9A530029B787 /* Round.swift */,
-				67D09B642C1DE40F001AEE0B /* BlockEdit.swift */,
+				67D09B642C1DE40F001AEE0B /* Block.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -424,6 +424,14 @@
 				673957332C1DAF390013F97D /* TextToChipView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		67886AF92C2F020700E27AF9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				67886AF52C2B4F6C00E27AF9 /* TimerMenuOptionView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		679714F12C0B0CDF0029B787 /* BlockDetail */ = {
@@ -475,9 +483,9 @@
 		67D09B772C1F586B001AEE0B /* TimerMenu */ = {
 			isa = PBXGroup;
 			children = (
+				67886AF92C2F020700E27AF9 /* Views */,
 				67D09B682C1E4A9E001AEE0B /* TimerMenuView.swift */,
 				67D09B782C1F58B7001AEE0B /* TimerMenuViewModel.swift */,
-				67886AF52C2B4F6C00E27AF9 /* TimerMenuOptionView.swift */,
 			);
 			path = TimerMenu;
 			sourceTree = "<group>";
@@ -610,7 +618,7 @@
 				673BDD282C0873C00097B038 /* UserProfileService.swift in Sources */,
 				673BDD1A2C0873B20097B038 /* HomeView.swift in Sources */,
 				673BDD322C0873CE0097B038 /* UserProfile.swift in Sources */,
-				673BDD8C2C08A02E0097B038 /* Block.swift in Sources */,
+				673BDD8C2C08A02E0097B038 /* BlockOld.swift in Sources */,
 				673BDD962C08A9A00097B038 /* BlockoutService.swift in Sources */,
 				67D09B622C1DE22F001AEE0B /* ProgressBarView.swift in Sources */,
 				673BDD8E2C08A0840097B038 /* Exercise.swift in Sources */,
@@ -635,7 +643,7 @@
 				6739573C2C1DAF390013F97D /* TextToChipView.swift in Sources */,
 				673BDD3C2C08740F0097B038 /* AppState.swift in Sources */,
 				679714F32C0B0CF50029B787 /* BlockDetailView.swift in Sources */,
-				67D09B652C1DE40F001AEE0B /* BlockEdit.swift in Sources */,
+				67D09B652C1DE40F001AEE0B /* Block.swift in Sources */,
 				679715102C0C64FC0029B787 /* SpeechService.swift in Sources */,
 				67D09B632C1DE22F001AEE0B /* ProgressTrackView.swift in Sources */,
 				673BDD292C0873C00097B038 /* AccountService.swift in Sources */,

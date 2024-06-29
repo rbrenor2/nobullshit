@@ -27,10 +27,10 @@ struct EmomSetupView: View {
                 Text("EVERY")
                     .font( isForEditCard! ? .title3 : .largeTitle)
                     .bold()
-                Text("WORK FOR")
+                Text("WORK")
                     .font( isForEditCard! ? .title3 : .largeTitle)
                     .bold()
-                Text("AND REST")
+                Text("REST")
                     .font( isForEditCard! ? .title3 : .largeTitle)
                     .bold()
             })
@@ -51,7 +51,7 @@ struct EmomSetupView: View {
                         .bold()
                 }
                 Menu {
-                    Picker(selection: $work) {
+                    Picker(selection: $rounds) {
                         ForEach(1...30, id: \.self) { value in
                             Text(String(value))
                                 .tag(value)
@@ -60,13 +60,13 @@ struct EmomSetupView: View {
                     } label: {}
                         .pickerStyle(.palette)
                 } label: {
-                    Text(String($work.wrappedValue))
+                    Text(String($rounds.wrappedValue))
                         .font( isForEditCard! ? .title : .largeTitle)
                         .foregroundStyle(.red)
                         .bold()
                 }
                 Menu {
-                    Picker(selection: $work) {
+                    Picker(selection: $rest) {
                         ForEach(Array(stride(from: 0, to: 65, by: 5)), id: \.self) { value in
                             Text(String(value))
                                 .tag(value)
@@ -75,7 +75,7 @@ struct EmomSetupView: View {
                     } label: {}
                         .pickerStyle(.palette)
                 } label: {
-                    Text(String($work.wrappedValue))
+                    Text(String($rest.wrappedValue))
                         .font( isForEditCard! ? .title : .largeTitle)
                         .foregroundStyle(.red)
                         .bold()

@@ -17,17 +17,17 @@ let exerciseSample3 = Exercise(id: "jwoi02", description: "Great exercise for ch
 let roundsSample = [Round(id: "2nu93uj", type: .PREPARE, countTo: 10), Round(id: "5f45t45t", type: .WORK, countTo: 60, exercise: exerciseSample, repetitions: 15), Round(id: "2nu233d93uj", type: .REST, countTo: 20), Round(id: "vrt4r54", type: .WORK, countTo: 60, exercise: exerciseSample), Round(id: "65h76hyt", type: .WORK, countTo: 60, exercise: exerciseSample1), Round(id: "23d2dwdd", type: .WORK, countTo: 60, exercise: exerciseSample2)]
 
 
-let blockSample = Block(id: "1231", countType: .AMRAP, rounds: roundsSample)
+//let blockSample = Block(countType: .AMRAP, rounds: roundsSample)
+//
+//let blockSample1 = Block(countType: .FORTIME, rounds: roundsSample)
+//let blockSample2 = Block(countType: .EMOM, rounds: roundsSample)
+//let blockSample3 = Block(countType: .TABATA, rounds: roundsSample)
 
-let blockSample1 = Block(id: "4j938j89", countType: .FORTIME, rounds: roundsSample)
-let blockSample2 = Block(id: "308h9dj0", countType: .EMOM, rounds: roundsSample)
-let blockSample3 = Block(id: "3j09sjip", countType: .TABATA, rounds: roundsSample)
-
-let blockEditSampleAMRAP = BlockEdit(type: .AMRAP)
-let blockEditSampleFORTIME = BlockEdit(type: .FORTIME)
-let blockEditSampleEMOM = BlockEdit(type: .EMOM)
-let blockEditSampleTABATA = BlockEdit(type: .TABATA)
+let blockEditSampleAMRAP = Block(type: .AMRAP)
+let blockEditSampleFORTIME = Block(type: .FORTIME)
+let blockEditSampleEMOM = Block(type: .EMOM)
+let blockEditSampleTABATA = Block(type: .TABATA)
 
 
-let blocksSample = [blockSample, blockSample1, blockSample2, blockSample3]
-let blockoutSample = Blockout(id: "sij98asj", blocks: blocksSample)
+//let blocksSample = [blockSample, blockSample1, blockSample2, blockSample3]
+//let blockoutSample = Blockout(id: "sij98asj", blocks: blocksSample)
