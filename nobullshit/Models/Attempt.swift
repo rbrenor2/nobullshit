@@ -7,7 +7,7 @@
 
 import FirebaseFirestoreSwift
 
-struct AttemptResult: Codable, Identifiable {
+struct AttemptResult: BaseModel {
     @DocumentID var id: String?
     var repetitions: Int?
     var duration: Float?
@@ -21,7 +21,7 @@ struct AttemptResult: Codable, Identifiable {
     }
 }
 
-struct Attempt: Codable, Identifiable {
+struct Attempt: BaseModel {
     @DocumentID var id: String?
     var blockoutRef: String
     var cancelledAt: String

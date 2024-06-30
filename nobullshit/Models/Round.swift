@@ -13,7 +13,7 @@ enum RoundType: String, Codable {
     case REST = "REST"
 }
 
-struct Round: Codable, Identifiable {
+struct Round: BaseModel {
     @DocumentID var id: String?
     var type: RoundType
     var countTo: Int

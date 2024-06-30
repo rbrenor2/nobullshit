@@ -5,6 +5,10 @@ struct TextToChipView: View {
     
     @State private var value: String = ""
     
+    init(list: Binding<[String]>) {
+        self._list = list
+    }
+    
     var body: some View {
         VStack(alignment: .center, spacing: nil, content: {
             VStack(alignment: .center, spacing: 5, content: {

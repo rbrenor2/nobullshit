@@ -8,7 +8,7 @@
 import FirebaseFirestoreSwift
 import FirebaseFirestore
 
-struct UserProfile: Codable, Identifiable {
+struct UserProfile: BaseModel {
     @DocumentID var id: String?
     var name: String
     var accountType: String

@@ -13,7 +13,7 @@ enum ExerciseLevel: String, Codable {
     case ADVANCED = "Advanced"
 }
 
-struct Exercise: Codable, Identifiable {
+struct Exercise: BaseModel {
     @DocumentID var id: String?
     var description: String
     var level: ExerciseLevel

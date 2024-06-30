@@ -23,10 +23,10 @@ let roundsSample = [Round(id: "2nu93uj", type: .PREPARE, countTo: 10), Round(id:
 //let blockSample2 = Block(countType: .EMOM, rounds: roundsSample)
 //let blockSample3 = Block(countType: .TABATA, rounds: roundsSample)
 
-let blockEditSampleAMRAP = Block(type: .AMRAP)
-let blockEditSampleFORTIME = Block(type: .FORTIME)
-let blockEditSampleEMOM = Block(type: .EMOM)
-let blockEditSampleTABATA = Block(type: .TABATA)
+let blockEditSampleAMRAP = Block(type: .AMRAP, exercises: [])
+let blockEditSampleFORTIME = Block(type: .FORTIME, exercises: [])
+let blockEditSampleEMOM = Block(type: .EMOM, exercises: [])
+let blockEditSampleTABATA = Block(type: .TABATA, exercises: [])
 
 
 //let blocksSample = [blockSample, blockSample1, blockSample2, blockSample3]

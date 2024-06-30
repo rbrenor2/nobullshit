@@ -33,5 +33,5 @@ struct BlockDetailView: View {
 }
 
 #Preview {
-    return BlockDetailView(block: Block(type: .AMRAP))
+    return BlockDetailView(block: Block(type: .AMRAP, exercises: []))
 }

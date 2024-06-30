@@ -36,7 +36,7 @@ struct BlockEditCard: View {
                 case .TABATA:
                     TabataSetupView(work: $block.work, rounds: $block.rounds, rest: $block.rest, isForEditCard: true)
                 }
-                TextToChipView(list: $excerciseTextList)
+                TextToChipView(list: $block.exercises)
             })
         })
         .padding(.all)

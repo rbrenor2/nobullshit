@@ -20,7 +20,7 @@ enum BoolTypeInString: String {
     case FALSE = "FALSE"
 }
 
-struct Preference: Codable, Identifiable {
+struct Preference: BaseModel {
     @DocumentID var id: String?
     var displayName: String?
     var type: String?
@@ -40,7 +40,7 @@ struct Preference: Codable, Identifiable {
     }
 }
 
-struct PreferenceDefinition: Codable, Identifiable {
+struct PreferenceDefinition: BaseModel {
     @DocumentID var id: String?
     var type: String?
     var displayName: String?

@@ -2,7 +2,6 @@ import SwiftUI
 import SwiftUISnackbar
 
 struct CreateBlockoutView: View {
-//    @StateObject private var observed: Observed = Observed()
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     @EnvironmentObject var appState: AppState
@@ -29,10 +28,10 @@ struct CreateBlockoutView: View {
                             Text("Tap the + button to add a block")
                                 .foregroundColor(.gray)
                         } else {
-                            ForEach($vm.blocks, id: \.id) { block in
+                            ForEach($vm.blocks, id: \.internalId) { block in
                                 ZStack(alignment: .center, content: {
                                     BlockEditCard(block: block, onClose: {
-                                        vm.removeBlock(id: UUID(uuidString: block.id!)!);
+                                        vm.removeBlock(id: UUID(uuidString: block.internalId.wrappedValue)!);
                                     })
                                 })
                             }    
@@ -60,7 +59,7 @@ struct CreateBlockoutView: View {
             }
         }).toolbar(content: {
             Button("Save") {
-                vm.createBlockout()
+                vm.create()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                     presentationMode.wrappedValue.dismiss()
                 }
@@ -70,5 +69,5 @@ struct CreateBlockoutView: View {
 }
 
 #Preview {
-    CreateBlockoutView(vm: CreateBlockoutViewModel())
+    CreateBlockoutView(vm: CreateBlockoutViewModel(appState: AppState()))
 }

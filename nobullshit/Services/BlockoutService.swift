@@ -16,6 +16,18 @@ struct BlockoutService {
     
     private let db = Firestore.firestore()
     
+    func save(blockout: Blockout) -> AnyPublisher<Blockout, Error> {
+        Future { promise in
+            let collection = self.db.collection(ResourcePaths.blockouts.rawValue)
+            collection.addDocument(data: blockout.dictionary) { error in
+                if let error = error {
+                    promise(.failure(error))
+                }
+            }
+        }
+        .eraseToAnyPublisher()
+    }
+    
     func getBlockoutOfTheDay(email: String) -> AnyPublisher<Blockout, Error> {
         Future { promise in
             let docRef = self.db.collection(ResourcePaths.blockouts.rawValue).document(email)

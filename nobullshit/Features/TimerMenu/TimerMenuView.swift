@@ -16,7 +16,7 @@ struct TimerMenu: View {
             VStack {
                 HStack {
                     NavigationLink {
-                        CreateBlockoutView(vm: CreateBlockoutViewModel())
+                        CreateBlockoutView(vm: CreateBlockoutViewModel(appState: appState))
                             .environmentObject(appState)
                     } label: {
                         TimerOptionView(title: "BLOCKOUT", color: .red, iconName: "crown.fill")

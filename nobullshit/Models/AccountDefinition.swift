@@ -12,7 +12,7 @@ enum AccountType: String {
     case PREMIUM = "PREMIUM"
 }
 
-struct AccountDefinition: Codable, Identifiable {
+struct AccountDefinition: BaseModel {
     @DocumentID var id: String?
     var displayName: String?
     var description: String?
